@@ -30,7 +30,7 @@ git clone https://github.com/Abinashshasini/input-validator.git
 npm i abinash-input-validator
 ```
 
-### OR
+### Yarn add
 ```bash
 yarn add abinash-input-validator
 ```
