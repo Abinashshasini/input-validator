@@ -45,6 +45,7 @@ console.log(result);
 
 #### Object Validation Example
 
+````markdown
 ### Validating an Object
 
 Define a schema with validation rules for each field and validate an object against it.
