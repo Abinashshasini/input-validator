@@ -20,9 +20,9 @@ To use this library, clone the repository or install it as a dependency:
 
 ### Clone Repository
 
-````bash
+````
 git clone https://github.com/Abinashshasini/input-validator.git
-
+```
 
 ### Validating a Single Field
 
