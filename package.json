@@ -1,0 +1,24 @@
+{
+  "name": "@abinash/input-validator",
+  "version": "1.0.0",
+  "description": "A lightweight, zero-dependency field validation library designed to enhance developer experience. Validate any type of data with a simple, intuitive API and robust error handling.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abinashshasini/input-validator.git"
+  },
+  "keywords": [
+    "npm",
+    "javascript"
+  ],
+  "author": "Abinash Shasini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abinashshasini/input-validator/issues"
+  },
+  "homepage": "https://github.com/Abinashshasini/input-validator#readme"
+}
