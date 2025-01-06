@@ -25,6 +25,16 @@ Getting started is quick and simple! Clone the repository to include it in your 
 git clone https://github.com/Abinashshasini/input-validator.git
 ```
 
+### npm install
+```bash
+npm i abinash-input-validator
+```
+
+### OR
+```bash
+yarn add abinash-input-validator
+```
+
 ### Validating a Single Field
 
 Use the `Validator` class to validate individual fields with chainable rules.
