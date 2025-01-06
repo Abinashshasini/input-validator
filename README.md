@@ -19,6 +19,7 @@ A flexible and powerful input validation library designed to simplify validation
 To use this library, clone the repository or install it as a dependency:
 
 ### Clone Repository
+
 git clone https://github.com/Abinashshasini/input-validator.git
 
 ### Validating a Single Field
@@ -40,10 +41,11 @@ console.log(result);
 //   isValid: false,
 //   errors: 'Username must be at least 3 characters long.'
 // }
-
+```
 
 #### Object Validation Example
-```markdown
+
+````markdown
 ### Validating an Object
 
 Define a schema with validation rules for each field and validate an object against it.
@@ -56,8 +58,9 @@ const schema = {
     .string()
     .min(3, 'Username must be at least 3 characters long.')
     .max(20, 'Username cannot exceed 20 characters.'),
-  email: new Validator('email')
-    .isEmail('Please provide a valid email address.'),
+  email: new Validator('email').isEmail(
+    'Please provide a valid email address.'
+  ),
 };
 
 const data = {
@@ -77,4 +80,5 @@ console.log(result);
 //     email: 'Please provide a valid email address.'
 //   }
 // }
+```
 ````
