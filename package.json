@@ -1,5 +1,5 @@
 {
-  "name": "@abinashshasini/input-validator",
+  "name": "zod-input-validator",
   "version": "1.0.0",
   "description": "A lightweight, zero-dependency field validation library designed to enhance developer experience. Validate any type of data with a simple, intuitive API and robust error handling.",
   "main": "index.js",
@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/Abinashshasini/input-validator/issues"
   },
-  "homepage": "https://github.com/Abinashshasini/input-validator#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "homepage": "https://github.com/Abinashshasini/input-validator#readme"
 }
