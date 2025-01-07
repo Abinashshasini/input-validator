@@ -77,6 +77,7 @@ const result = schema.parse({
   username: 'te',
   emaiil: 'test.com',
 });
+
 const result = validator.parse(data);
 console.log(result);
 // Output:
