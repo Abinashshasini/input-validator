@@ -5,32 +5,34 @@ With support for **chainable validation rules** and **schema-based object valida
 
 ---
 
-## ✨ Features  
+## ✨ Features
 
-- 🚀 **Chainable Validation Rules**: Easily validate fields with modular and readable methods.  
-- 📋 **Schema-Based Validation**: Validate complex objects with predefined schemas.  
-- ✅ **Built-in Rules**: Common validations like strings, min/max length, regex, and email included out of the box.  
-- 🔧 **Extensible**: Add custom rules tailored to your needs.  
-- ⚡ **Lightweight and Fast**: Minimal dependencies, easy integration, and excellent performance.  
+- 🚀 **Chainable Validation Rules**: Easily validate fields with modular and readable methods.
+- 📋 **Schema-Based Validation**: Validate complex objects with predefined schemas.
+- ✅ **Built-in Rules**: Common validations like strings, min/max length, regex, and email included out of the box.
+- 🔧 **Extensible**: Add custom rules tailored to your needs.
+- ⚡ **Lightweight and Fast**: Minimal dependencies, easy integration, and excellent performance.
 
 ---
 
-## 📦 Installation  
+## 📦 Installation
 
-Getting started is quick and simple! Clone the repository to include it in your project:  
+Getting started is quick and simple! Clone the repository to include it in your project:
 
-### Clone Repository  
+### Clone Repository
 
 ```bash
 git clone https://github.com/Abinashshasini/input-validator.git
 ```
 
 ### npm install
+
 ```bash
 npm i npm i zod-input-validator
 ```
 
 ### Yarn add
+
 ```bash
 yarn add zod-input-validator
 ```
@@ -63,24 +65,19 @@ Define a schema with validation rules for each field and validate an object agai
 ```javascript
 import { Validator } from 'zod-input-validator';
 
-const schema = {
-  username: new Validator('username')
+const schema = Validator.object({
+  username: new Validator()
     .string()
     .min(3, 'Username must be at least 3 characters long.')
     .max(20, 'Username cannot exceed 20 characters.'),
-  email: new Validator('email').isEmail(
-    'Please provide a valid email address.'
-  ),
-};
+  emaiil: new Validator().isEmail('Please provide a valid email address.'),
+});
 
-const data = {
-  username: 'ab',
-  email: 'invalid-email',
-};
-
-const validator = Validator.object(schema);
+const result = schema.parse({
+  username: 'te',
+  emaiil: 'test.com',
+});
 const result = validator.parse(data);
-
 console.log(result);
 // Output:
 // {
