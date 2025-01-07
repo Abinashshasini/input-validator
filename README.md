@@ -27,12 +27,12 @@ git clone https://github.com/Abinashshasini/input-validator.git
 
 ### npm install
 ```bash
-npm i abinash-input-validator
+npm i npm i zod-input-validator
 ```
 
 ### Yarn add
 ```bash
-yarn add abinash-input-validator
+yarn add zod-input-validator
 ```
 
 ### Validating a Single Field
@@ -40,7 +40,7 @@ yarn add abinash-input-validator
 Use the `Validator` class to validate individual fields with chainable rules.
 
 ```javascript
-import { Validator } from './path/to/Validator.js';
+import { Validator } from 'zod-input-validator';
 
 const validator = new Validator('username')
   .string()
@@ -61,7 +61,7 @@ console.log(result);
 Define a schema with validation rules for each field and validate an object against it.
 
 ```javascript
-import { Validator } from './path/to/Validator.js';
+import { Validator } from 'zod-input-validator';
 
 const schema = {
   username: new Validator('username')
