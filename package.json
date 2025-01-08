@@ -1,6 +1,6 @@
 {
   "name": "zod-input-validator",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A lightweight, zero-dependency field validation library designed to enhance developer experience. Validate any type of data with a simple, intuitive API and robust error handling.",
   "main": "index.js",
   "type": "module",
