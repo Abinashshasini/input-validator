@@ -4,6 +4,8 @@ import {
   maxLength,
   minLength,
   regex,
+  isNumber,
+  isValidIndianNumber,
 } from './functions/index.js';
 
 export class Validator {
@@ -14,6 +16,11 @@ export class Validator {
 
   string(message) {
     this._rules.push(isString(message));
+    return this;
+  }
+
+  number(message) {
+    this._rules.push(isNumber(message));
     return this;
   }
 
@@ -34,6 +41,11 @@ export class Validator {
 
   isEmail(message) {
     this._rules.push(isEmail(message));
+    return this;
+  }
+
+  isValidIndianNumber(number, message) {
+    this._rules.push(isValidIndianNumber(number, message));
     return this;
   }
 
