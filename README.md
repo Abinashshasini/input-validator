@@ -89,3 +89,16 @@ console.log(result);
 //   }
 // }
 ```
+
+## Available Functions
+
+| **Function**          | **Description**                                                           | **Parameters**                                                                              | **Example Usage**                                                                |
+| --------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `isString`            | Validates whether a value is a string.                                    | - `message`: (optional) Custom error message.                                               | `validator.string("Value must be a string.")`                                    |
+| `isEmail`             | Validates whether a value is a valid email address.                       | - `message`: (optional) Custom error message.                                               | `validator.isEmail("Invalid email address.")`                                    |
+| `maxLength`           | Validates whether a string's length does not exceed a maximum value.      | - `length`: Maximum length.<br> - `message`: (optional) Custom error message.               | `validator.max(10, "Maximum 10 characters allowed.")`                            |
+| `minLength`           | Validates whether a string's length is at least a minimum value.          | - `length`: Minimum length.<br> - `message`: (optional) Custom error message.               | `validator.min(5, "Minimum 5 characters required.")`                             |
+| `regex`               | Validates whether a value matches a specified regular expression pattern. | - `pattern`: Regular expression.<br> - `message`: (optional) Custom error message.          | `validator.regex(/^\d+$/, "Only numeric values allowed.")`                       |
+| `isNumber`            | Validates whether a value is a number.                                    | - `message`: (optional) Custom error message.                                               | `validator.number("Value must be a number.")`                                    |
+| `isBoolean`           | Validates whether a value is a boolean (true/false).                      | - `message`: (optional) Custom error message.                                               | `validator.boolean("Value must be true or false.")`                              |
+| `isValidIndianNumber` | Validates whether a value is a valid Indian phone number.                 | - `number`: The phone number to validate.<br> - `message`: (optional) Custom error message. | `validator.isValidIndianNumber("+919876543210", "Invalid Indian phone number.")` |
