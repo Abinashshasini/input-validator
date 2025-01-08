@@ -14,7 +14,9 @@
   },
   "keywords": [
     "npm",
-    "javascript"
+    "javascript",
+    "node",
+    "validation"
   ],
   "author": "Abinash Shasini",
   "license": "MIT",
