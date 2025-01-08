@@ -28,7 +28,7 @@ git clone https://github.com/Abinashshasini/input-validator.git
 ### npm install
 
 ```bash
-npm i npm i zod-input-validator
+npm i zod-input-validator
 ```
 
 ### Yarn add
