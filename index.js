@@ -5,6 +5,7 @@ import {
   minLength,
   regex,
   isNumber,
+  isBoolean,
   isValidIndianNumber,
 } from './functions/index.js';
 
@@ -36,6 +37,11 @@ export class Validator {
 
   regex(pattern, message) {
     this._rules.push(regex(pattern, message));
+    return this;
+  }
+
+  boolean(message) {
+    this._rules.push(isBoolean(message));
     return this;
   }
 

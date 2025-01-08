@@ -4,7 +4,7 @@
  */
 export function isValidIndianNumber(message) {
   return (value) => {
-    if (value && typeof value !== 'number') {
+    if (!value || typeof value !== 'number') {
       return {
         isValid: false,
         errorMessage: message || 'Value must be a number.',
