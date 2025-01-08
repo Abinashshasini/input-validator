@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Abinashshasini/input-validator.git"
+    "url": "git+https://github.com/Abinashshasini/zod-input-validator.git"
   },
   "keywords": [
     "npm",
@@ -19,7 +19,7 @@
   "author": "Abinash Shasini",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Abinashshasini/input-validator/issues"
+    "url": "https://github.com/Abinashshasini/zod-input-validator/issues"
   },
-  "homepage": "https://github.com/Abinashshasini/input-validator#readme"
+  "homepage": "https://github.com/Abinashshasini/zod-input-validator#readme"
 }
